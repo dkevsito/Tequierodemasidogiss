@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños GIS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+        body {
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #ff9a9e, #fecfef);
+            color: white;
+            padding: 20px;
+            animation: slideIn 2s ease-out;
+        }
+
+        header h1 {
+            font-size: 4em;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        header .decorations {
+            display: flex;
+            gap: 15px;
+        }
+
+        header .decorations img {
+            width: 100px;
+            height: auto;
+            animation: bounce 1.5s infinite;
+        }
+
+        .subheading {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            color: #333;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: fadeInSlide 3s ease-in-out;
+        }
+
+        .slide img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        .slide p {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 10px auto;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(120deg, #ff9a9e, #fecfef);
+            color: rgb(247, 8, 8);
+            animation: glowFooter 2s ease-in-out infinite alternate;
+        }
+
+        .nav-arrows {
+            position: fixed;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .nav-arrows button {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .nav-arrows button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes glowFooter {
+            0% {
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="decorations">
+            <img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Regalo">
+            <img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Decoración">
+            <img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti">
+            <img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti"><img src="e41110dc0bc98b1e36ddf291d209718c.gif" alt="Confeti">
+        </div>
+        <h1>¡Feliz Cumpleaños, GIS!</h1>
+        <p class="subheading">Un día especial para celebrar a una persona maravillosa</p>
+        <div class="decorations">
+            <img src="gus2.gif" alt="Música">
+            <img src="gus2.gif" alt="Música">
+            <img src="gus2.gif" alt="Música">
+            <img src="gus2.gif" alt="Música">
+            <img src="gis1.gif" alt="Capibara">
+            <img src="gus2.gif" alt="Arcoíris">
+            <img src="gus2.gif" alt="Arcoíris">  <img src="gus2.gif" alt="Arcoíris">  <img src="gus2.gif" alt="Arcoíris">
+        </div>
+    </header>
+
+    <div class="slide">
+        <img src="WhatsApp Image 2024-08-09 at 12.03.06 PM.jpeg"  height="400px" width="400px" alt="Capibara Amistoso">
+        <p>
+            GIS, Feliz cumple espero y los disfrutes, ya estas mas viejita. Sabes que siempre cuentas conmigo para todo Gis lo que sea y por lo que sea. Te quiero Mucho.
+        </p>
+    </div>
+
+    <div class="slide">
+        <img src="th.jpg"height="400px" width="400px" alt="Momentos Especiales">
+        <p>
+           Te quiero tanto como tu quieres a los capybaras Gis.
+        </p>
+    </div>
+
+    <div class="slide">
+        <img src="glenn-and-pepper-skin-pelotocino-and-pelotocina-v0-zcw2lqhjl8nc1.webp" height="400px" width="400px" alt="Reels y Tiktoks">
+        <p>
+            Sean buenos o malos los dias, nublados o soleados, grises o de color,  felices o tristes, estare ahi que ninguna situacion nunca te haga sentir sola.
+        </p>
+    </div>
+
+    <footer>
+        Con cariño, tu amigo/a. 🧡
+    </footer>
+
+   
+   
+</body>
+</html>
